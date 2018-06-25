@@ -6,14 +6,18 @@ function Card({
   fields,
   data,
 }) {
-  const info = fields.map(el => (
-    <span key={shordid.generate()}>
-      {
-        data[el.field] ? `${el.label} ${data[el.field]}` : null
-      }
-    </span>
-  ));
-  console.log(fields);
+  const info = fields.map((el) => {
+    if (data[el.field]) {
+      return (
+        <span key={shordid.generate()}>
+          {
+            `${el.label} ${data[el.field]}`
+          }
+        </span>
+      );
+    }
+    return null;
+  });
   return (
     <li>
       {info}
