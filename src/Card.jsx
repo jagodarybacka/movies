@@ -6,9 +6,7 @@ function Card({
   fields,
   data,
 }) {
-  // console.log(data);
-  const header = data[fields[0].field];
-  const rest = fields.map(el => (
+  const info = fields.map(el => (
     <span key={shordid.generate()}>
       {
         data[el.field] ? `${el.label} ${data[el.field]}` : null
@@ -18,10 +16,7 @@ function Card({
   console.log(fields);
   return (
     <li>
-      <h2>
-        {header}
-      </h2>
-      {rest}
+      {info}
     </li>
   );
 }
