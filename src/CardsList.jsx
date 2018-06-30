@@ -1,6 +1,7 @@
 import React from 'react';
 import shordid from 'shortid';
 import Card from './Card';
+import CardsListComponent from './CardsList.style';
 
 function CardsList({ fields, data }) {
   console.log('fields: ', fields);
@@ -13,9 +14,9 @@ function CardsList({ fields, data }) {
     />
   ));
   return (
-    <ul>
+    <CardsListComponent>
       {cards}
-    </ul>
+    </CardsListComponent>
   );
 }
 
