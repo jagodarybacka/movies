@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
 import CardsList from './CardsList';
+import Controls from './Controls';
 
 const API = 'https://api.myjson.com/bins/1tll6';
 
@@ -28,6 +29,7 @@ class App extends Component {
   render() {
     return (
       <section>
+        <Controls />
         <CardsList {...this.state} />
       </section>
     );
