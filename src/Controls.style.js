@@ -11,7 +11,7 @@ const ControlsComponent = styled.form`
   border-radius: 5px;
 
 
-  button {
+  input[type="submit"] {
     background-color: #009688;
     position: absolute;
     right: 1rem;

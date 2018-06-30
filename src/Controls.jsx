@@ -1,4 +1,5 @@
 import React from 'react';
+import ControlsItem from './ControlsItem';
 import { ControlsComponent, ControlsSection } from './Controls.style'
 
 function Controls() {
@@ -21,6 +22,8 @@ function Controls() {
     - votes asc
     - votes des
   */
+  const order = ['Ascending', 'Descending'];
+  const orderAZ = ['A-Z', 'Z-A'];
 
   return (
     <ControlsComponent>
@@ -29,26 +32,10 @@ function Controls() {
           Filters
         </h2>
         <ul>
-          <li>
-            <p>
-              Release date
-            </p>
-            <select>
-              <option defaultValue>
-                All
-              </option>
-            </select>
-          </li>
-          <li>
-            <p>
-              Genre
-            </p>
-            <select>
-              <option defaultValue>
-                All
-              </option>
-            </select>
-          </li>
+          <ControlsItem
+            name="Genre"
+            defaultValue="All"
+          />
         </ul>
       </ControlsSection>
       <ControlsSection>
@@ -56,25 +43,39 @@ function Controls() {
           Sort
         </h2>
         <ul>
-          <li>
-            <p>
-              Title
-            </p>
-            <select>
-              <option defaultValue>
-                None
-              </option>
-              <option>
-                Ascending
-              </option>
-              <option>
-                Descending
-              </option>
-            </select>
-          </li>
+          <ControlsItem
+            name="Title"
+            defaultValue="None"
+            options={orderAZ}
+          />
+          <ControlsItem
+            name="Genre"
+            defaultValue="None"
+            options={orderAZ}
+          />
+          <ControlsItem
+            name="Release date"
+            defaultValue="None"
+            options={order}
+          />
+          <ControlsItem
+            name="Duration"
+            defaultValue="None"
+            options={order}
+          />
+          <ControlsItem
+            name="Rating"
+            defaultValue="None"
+            options={order}
+          />
+          <ControlsItem
+            name="Votes"
+            defaultValue="None"
+            options={order}
+          />
         </ul>
       </ControlsSection>
-      <button>Apply</button>
+      <input type="submit" value="Reset" />
     </ControlsComponent>
   );
 }
