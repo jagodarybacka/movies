@@ -9,10 +9,26 @@ class ControlsItem extends React.Component {
       value: 'none',
     };
     this.change = this.change.bind(this);
+    this.sorting = this.sorting.bind(this);
+    this.filtering = this.filtering.bind(this);
   }
 
   change(e) {
+    const { field, type } = this.props;
     this.setState({ value: e.target.value });
+    if (type === 'sort') this.sorting(field, e.target.value);
+    if (type === 'filter') {
+      const { fn } = this.props;
+      this.filtering(field, e.target.value, fn);
+    }
+  }
+
+  sorting(field, value) {
+    this.props.sort(field, value);
+  }
+
+  filtering(field, compare, fn) {
+    this.props.filter(field, compare, fn);
   }
 
   render() {
@@ -42,8 +58,8 @@ class ControlsItem extends React.Component {
           {name}
         </p>
         <select
-          onChange={this.change}
           value={this.state.value}
+          onChange={this.change}
         >
           <option value="none" defaultValue>
             {defaultValue || 'None'}

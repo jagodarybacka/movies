@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import './App.css';
 import CardsList from './CardsList';
 import Controls from './Controls';
+import './App.css';
 
 const API = 'https://api.myjson.com/bins/1tll6';
 
@@ -13,10 +13,13 @@ class App extends Component {
     this.state = {
       fields: [],
       data: [],
+      sourceData: [],
       genres: [],
     };
 
     this.initGenres = this.initGenres.bind(this);
+    this.sort = this.sort.bind(this);
+    this.filter = this.filter.bind(this);
   }
 
   componentDidMount() {
@@ -25,6 +28,7 @@ class App extends Component {
         this.setState({
           fields: response.data.fields,
           data: response.data.values,
+          sourceData: response.data.values,
         });
       })
       .then(() => this.initGenres());
@@ -49,11 +53,47 @@ class App extends Component {
     });
   }
 
+  filter(field, compare, fn) {
+    const { data } = this.state;
+    const filteredData = data.map(el => fn(el[field], compare) ? el : null);
+
+    this.setState({
+      data: filteredData,
+    });
+  }
+
+  sort(field, order) {
+    let sortedData;
+    const { data } = this.state;
+    if (order === 'dsc') {
+      sortedData = data.sort((a, b) => {
+        if (!a[field] && !b[field]) return 0;
+        if (!a[field] && b[field]) return b[field];
+        if (!b[field] && a[field]) return a[field];
+        console.log(a[field], b[field]);
+        return b[field] - a[field];
+      });
+    } else {
+      sortedData = data.sort((a, b) => {
+        if (!a[field] && b[field]) return b[field];
+        if (!b[field] && a[field]) return a[field];
+        console.log(a[field], b[field]);
+        return a[field] - b[field];
+      });
+    }
+
+    console.log(field, order);
+
+    this.setState({
+      data: sortedData,
+    });
+  }
+
   render() {
-    const { genres } = this.state;
+    const { genres, fields } = this.state;
     return (
       <section>
-        <Controls genres={genres} />
+        <Controls genres={genres} sort={this.sort} filter={this.filter} fields={fields} />
         <CardsList {...this.state} />
       </section>
     );

@@ -1,18 +1,36 @@
 import React from 'react';
-import ControlsItem from './ControlsItem';
 import shordid from 'shortid';
+import ControlsItem from './ControlsItem';
 
-import { ControlsComponent, ControlsSection } from './Controls.style'
+import { ControlsComponent, ControlsSection } from './Controls.style';
 
-function Controls({ genres }) {
+function ratingFn(fieldValue, compare) {
+  if (fieldValue && fieldValue > compare) return true;
+  return false;
+}
+
+function genreFn(fieldValue, compare) {
+  if (fieldValue && fieldValue.indexOf(compare) >= 0) return true;
+  return false;
+}
+
+function Controls({ genres, sort , filter }) {
   const order = [{ name: 'Ascending', value: 'asc' }, { name: 'Descending', value: 'dsc' }];
   const orderAZ = [{ name: 'A-Z', value: 'asc' }, { name: 'Z-A', value: 'dsc' }];
 
   const filtersItems = [
-    { name: 'Genere', defaultValue: 'All', options: genres },
+    {
+      name: 'Genere',
+      field: 'genre',
+      defaultValue: 'All',
+      fn: genreFn,
+      options: genres,
+    },
     {
       name: 'Rating',
+      field: 'rating',
       defaultValue: 'All',
+      fn: ratingFn,
       options: [
         { name: '1 and more', value: 1 },
         { name: '2 and more', value: 2 },
@@ -26,28 +44,35 @@ function Controls({ genres }) {
     },
   ];
   const sortItems = [
-    { name: 'Title', defaultValue: 'None', options: orderAZ },
-    { name: 'Genre', defaultValue: 'None', options: orderAZ },
-    { name: 'Release date', defaultValue: 'None', options: order },
-    { name: 'Duration', defaultValue: 'None', options: order },
-    { name: 'Rating', defaultValue: 'None', options: order },
-    { name: 'Votes', defaultValue: 'None', options: order },
+    { name: 'Title', field: 'name', defaultValue: 'None', options: orderAZ },
+    { name: 'Genre', field: 'genre', defaultValue: 'None', options: orderAZ },
+    { name: 'Release date', field: 'year', defaultValue: 'None', options: order },
+    { name: 'Duration', field: 'duration', defaultValue: 'None', options: order },
+    { name: 'Rating', field: 'rating', defaultValue: 'None', options: order },
+    { name: 'Votes', field: 'votes', defaultValue: 'None', options: order },
   ];
 
-  const filters = filtersItems.map(el => (
+  const filtersComponents = filtersItems.map(el => (
     <ControlsItem
       name={el.name}
+      field={el.field}
+      type="filter"
       defaultValue={el.defaultValue}
       options={el.options}
+      fn={el.fn}
+      filter={filter}
       key={shordid.generate()}
     />
   ));
 
-  const sort = sortItems.map(el => (
+  const sortComponents = sortItems.map(el => (
     <ControlsItem
       name={el.name}
+      field={el.field}
+      type="sort"
       defaultValue={el.defaultValue}
       options={el.options}
+      sort={sort}
       key={shordid.generate()}
     />
   ));
@@ -59,7 +84,7 @@ function Controls({ genres }) {
           Filters
         </h2>
         <ul>
-          {filters}
+          {filtersComponents}
         </ul>
       </ControlsSection>
       <ControlsSection>
@@ -67,7 +92,7 @@ function Controls({ genres }) {
           Sort
         </h2>
         <ul>
-          {sort}
+          {sortComponents}
         </ul>
       </ControlsSection>
       <input type="submit" value="Reset" />
