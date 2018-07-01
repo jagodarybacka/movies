@@ -4,8 +4,6 @@ import Card from './Card';
 import CardsListComponent from './CardsList.style';
 
 function CardsList({ fields, data }) {
-  console.log('fields: ', fields);
-
   const cards = data.map(card => (
     <Card
       fields={fields}

@@ -13,7 +13,10 @@ class App extends Component {
     this.state = {
       fields: [],
       data: [],
+      genres: [],
     };
+
+    this.initGenres = this.initGenres.bind(this);
   }
 
   componentDidMount() {
@@ -23,13 +26,34 @@ class App extends Component {
           fields: response.data.fields,
           data: response.data.values,
         });
-      });
+      })
+      .then(() => this.initGenres());
+  }
+
+  initGenres() {
+    const { data } = this.state;
+    const genresArray = [];
+    data.map((el) => {
+      if (el.genre) {
+        const elementGenres = el.genre.split(', ');
+        elementGenres.forEach((a) => {
+          if (genresArray.indexOf(a) === -1) {
+            genresArray.push(a);
+          }
+        });
+      }
+    });
+    console.log(genresArray);
+    this.setState({
+      genres: genresArray,
+    });
   }
 
   render() {
+    const { genres } = this.state;
     return (
       <section>
-        <Controls />
+        <Controls genres={genres} />
         <CardsList {...this.state} />
       </section>
     );

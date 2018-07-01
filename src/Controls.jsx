@@ -2,7 +2,7 @@ import React from 'react';
 import ControlsItem from './ControlsItem';
 import { ControlsComponent, ControlsSection } from './Controls.style'
 
-function Controls() {
+function Controls({ genres }) {
   /*
     Filtering:
     - release date
@@ -35,6 +35,7 @@ function Controls() {
           <ControlsItem
             name="Genre"
             defaultValue="All"
+            options={genres}
           />
         </ul>
       </ControlsSection>

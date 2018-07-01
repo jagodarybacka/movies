@@ -1,10 +1,11 @@
 import React from 'react';
+import shordid from 'shortid';
 
 function ControlsItem({ name, defaultValue, options }) {
   let optionsList = [];
   if (options) {
     optionsList = options.map(el => (
-      <option>
+      <option key={shordid.generate()}>
         {el}
       </option>
     ));
