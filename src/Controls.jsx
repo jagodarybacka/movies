@@ -5,31 +5,25 @@ import shordid from 'shortid';
 import { ControlsComponent, ControlsSection } from './Controls.style'
 
 function Controls({ genres }) {
-  /*
-    Filtering:
-    - release date
-    - genre
-    - duration
-    - rating
-
-    Sorting:
-    - title a-z
-    - title z-a
-    - release date asc
-    - release date des
-    - duration asc
-    - duration des
-    - rating asc
-    - rating des
-    - votes asc
-    - votes des
-  */
-  const order = ['Ascending', 'Descending'];
-  const orderAZ = ['A-Z', 'Z-A'];
+  const order = [{ name: 'Ascending', value: 'asc' }, { name: 'Descending', value: 'dsc' }];
+  const orderAZ = [{ name: 'A-Z', value: 'asc' }, { name: 'Z-A', value: 'dsc' }];
 
   const filtersItems = [
     { name: 'Genere', defaultValue: 'All', options: genres },
-    { name: 'Rating', defaultValue: 'All', options: ['1 and more', '2 and more', '3 and more', '4 and more', '5 and more', '6 and more', '7 and more', '8 and more', '9 and more'] },
+    {
+      name: 'Rating',
+      defaultValue: 'All',
+      options: [
+        { name: '1 and more', value: 1 },
+        { name: '2 and more', value: 2 },
+        { name: '3 and more', value: 3 },
+        { name: '4 and more', value: 4 },
+        { name: '5 and more', value: 5 },
+        { name: '6 and more', value: 6 },
+        { name: '7 and more', value: 7 },
+        { name: '8 and more', value: 8 },
+        { name: '9 and more', value: 9 }],
+    },
   ];
   const sortItems = [
     { name: 'Title', defaultValue: 'None', options: orderAZ },
