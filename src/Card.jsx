@@ -1,10 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import shordid from 'shortid';
 
 import CardComponent from './Card.style';
 
 function Card({
-  id,
   fields,
   data,
 }) {
@@ -28,6 +28,11 @@ function Card({
       {info}
     </CardComponent>
   );
+}
+
+Card.propTypes = {
+  fields: PropTypes.array.isRequired,
+  data: PropTypes.object.isRequired,
 }
 
 export default Card;

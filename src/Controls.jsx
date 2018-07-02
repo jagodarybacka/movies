@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import shordid from 'shortid';
 import ControlsItem from './ControlsItem';
 
@@ -14,7 +15,12 @@ function genreFn(fieldValue, compare) {
   return false;
 }
 
-function Controls({ genres, sort, filter, reset }) {
+function Controls({
+  genres,
+  sort,
+  filter,
+  reset,
+}) {
   const order = [{ name: 'Ascending', value: 'asc' }, { name: 'Descending', value: 'dsc' }];
   const orderAZ = [{ name: 'A-Z', value: 'asc' }, { name: 'Z-A', value: 'dsc' }];
 
@@ -44,12 +50,24 @@ function Controls({ genres, sort, filter, reset }) {
     },
   ];
   const sortItems = [
-    { name: 'Title', field: 'name', defaultValue: 'None', options: orderAZ },
-    { name: 'Genre', field: 'genre', defaultValue: 'None', options: orderAZ },
-    { name: 'Release date', field: 'year', defaultValue: 'None', options: order },
-    { name: 'Duration', field: 'duration', defaultValue: 'None', options: order },
-    { name: 'Rating', field: 'rating', defaultValue: 'None', options: order },
-    { name: 'Votes', field: 'votes', defaultValue: 'None', options: order },
+    {
+      name: 'Title', field: 'name', defaultValue: 'None', options: orderAZ,
+    },
+    {
+      name: 'Genre', field: 'genre', defaultValue: 'None', options: orderAZ,
+    },
+    {
+      name: 'Release date', field: 'year', defaultValue: 'None', options: order,
+    },
+    {
+      name: 'Duration', field: 'duration', defaultValue: 'None', options: order,
+    },
+    {
+      name: 'Rating', field: 'rating', defaultValue: 'None', options: order,
+    },
+    {
+      name: 'Votes', field: 'votes', defaultValue: 'None', options: order,
+    },
   ];
 
   const filtersComponents = filtersItems.map(el => (
@@ -95,9 +113,19 @@ function Controls({ genres, sort, filter, reset }) {
           {sortComponents}
         </ul>
       </ControlsSection>
-      <button onClick={reset}>Reset filters</button>
+      <button type="button" onClick={reset}>
+        Reset filters
+      </button>
     </ControlsComponent>
   );
 }
+
+
+Controls.propTypes = {
+  genres: PropTypes.array.isRequired,
+  sort: PropTypes.func.isRequired,
+  filter: PropTypes.func.isRequired,
+  reset: PropTypes.func.isRequired,
+};
 
 export default Controls;

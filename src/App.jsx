@@ -47,8 +47,8 @@ class App extends Component {
           }
         });
       }
+      return el;
     });
-    console.log(genresArray);
     this.setState({
       genres: genresArray,
     });
@@ -78,7 +78,6 @@ class App extends Component {
         if (!a[field] && !b[field]) return 0;
         if (!a[field] && b[field]) return b[field];
         if (!b[field] && a[field]) return a[field];
-        console.log(a[field], b[field]);
         return b[field] - a[field];
       });
     } else {
@@ -113,7 +112,13 @@ class App extends Component {
     const { genres, fields } = this.state;
     return (
       <section>
-        <Controls genres={genres} reset={this.reset} sort={this.sort} filter={this.filter} fields={fields} />
+        <Controls
+          genres={genres}
+          reset={this.reset}
+          sort={this.sort}
+          filter={this.filter}
+          fields={fields}
+        />
         <CardsList {...this.state} />
       </section>
     );

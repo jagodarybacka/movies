@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import shordid from 'shortid';
 
 class ControlsItem extends React.Component {
@@ -24,15 +25,18 @@ class ControlsItem extends React.Component {
   }
 
   sorting(field, value) {
-    this.props.sort(field, value);
+    const { sort } = this.props;
+    sort(field, value);
   }
 
   filtering(field, compare, fn) {
-    this.props.filter(field, compare, fn);
+    const { filter } = this.props;
+    filter(field, compare, fn);
   }
 
   render() {
     const { options, name, defaultValue } = this.props;
+    const { value } = this.state;
     let optionsList = [];
     if (options) {
       optionsList = options.map((el) => {
@@ -58,7 +62,7 @@ class ControlsItem extends React.Component {
           {name}
         </p>
         <select
-          value={this.state.value}
+          value={value}
           onChange={this.change}
         >
           <option value="none" defaultValue>
@@ -70,5 +74,16 @@ class ControlsItem extends React.Component {
     );
   }
 }
+
+ControlsItem.propTypes = {
+  name: PropTypes.string.isRequired,
+  field: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  defaultValue: PropTypes.string.isRequired,
+  options: PropTypes.array.isRequired,
+  fn: PropTypes.func,
+  filter: PropTypes.func,
+  sort: PropTypes.func,
+};
 
 export default ControlsItem;
