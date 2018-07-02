@@ -20,6 +20,7 @@ class App extends Component {
     this.initGenres = this.initGenres.bind(this);
     this.sort = this.sort.bind(this);
     this.filter = this.filter.bind(this);
+    this.reset = this.reset.bind(this);
   }
 
   componentDidMount() {
@@ -100,11 +101,19 @@ class App extends Component {
     });
   }
 
+  reset(e) {
+    e.preventDefault();
+    const { sourceData } = this.state;
+    this.setState({
+      data: sourceData,
+    });
+  }
+
   render() {
     const { genres, fields } = this.state;
     return (
       <section>
-        <Controls genres={genres} sort={this.sort} filter={this.filter} fields={fields} />
+        <Controls genres={genres} reset={this.reset} sort={this.sort} filter={this.filter} fields={fields} />
         <CardsList {...this.state} />
       </section>
     );

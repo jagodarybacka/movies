@@ -14,7 +14,7 @@ function genreFn(fieldValue, compare) {
   return false;
 }
 
-function Controls({ genres, sort , filter }) {
+function Controls({ genres, sort, filter, reset }) {
   const order = [{ name: 'Ascending', value: 'asc' }, { name: 'Descending', value: 'dsc' }];
   const orderAZ = [{ name: 'A-Z', value: 'asc' }, { name: 'Z-A', value: 'dsc' }];
 
@@ -95,7 +95,7 @@ function Controls({ genres, sort , filter }) {
           {sortComponents}
         </ul>
       </ControlsSection>
-      <input type="submit" value="Reset" />
+      <button onClick={reset}>Reset filters</button>
     </ControlsComponent>
   );
 }
