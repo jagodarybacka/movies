@@ -12,33 +12,47 @@ const ControlsComponent = styled.form`
 
 
   button {
-    background-color: #009688;
-    position: absolute;
-    left: 1rem;
-    bottom: 1rem;
-    padding: 10px 15px;
+    background-color: #9e9e9e;
+    padding: 6px 8px;
+    margin: 3px 5px;
     font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 400;
     color: #fff;
     border: none;
-    box-shadow: 0 1px 6px #888888;
     border-radius: 5px;
     cursor: pointer;
+    &.reset {
+      position: absolute;
+      left: 1rem;
+      bottom: 1rem;
+      background-color: #009688;
+      padding: 10px 15px;
+      text-transform: uppercase;
+      font-weight: 500;
+      box-shadow: 0 1px 6px #888888;
+      border-radius: 5px;
+    }
     &:focus {
       outline: none;
     }
     &:active {
       outline: none;
+      background-color: #858484;
+    }
+    &.reset:active {
       box-shadow: 0 0 0 #888888;
+      background-color: #007b6f;
     }
   }
 `;
 
 const ControlsSection = styled.div`
   margin: 0 2rem;
-  p {
+  width: 40%;
+  .sort p {
     display: inline;
+  }
+  p {
     margin-right: 10px;
   }
   ul {
@@ -47,14 +61,8 @@ const ControlsSection = styled.div`
     padding: 0;
     text-align: left;
   }
-
   li {
     margin: 10px 0;
-  }
-
-  select {
-    background-color: #fff;
-    padding: 6px 8px;
   }
 `;
 

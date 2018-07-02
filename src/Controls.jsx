@@ -109,11 +109,11 @@ function Controls({
         <h2>
           Sort
         </h2>
-        <ul>
+        <ul className="sort">
           {sortComponents}
         </ul>
       </ControlsSection>
-      <button type="button" onClick={reset}>
+      <button className="reset" type="button" onClick={reset}>
         Reset filters
       </button>
     </ControlsComponent>

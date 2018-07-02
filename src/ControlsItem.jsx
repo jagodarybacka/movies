@@ -6,21 +6,18 @@ class ControlsItem extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      value: 'none',
-    };
     this.change = this.change.bind(this);
     this.sorting = this.sorting.bind(this);
     this.filtering = this.filtering.bind(this);
   }
 
   change(e) {
+    const newValue = e.target.value;
     const { field, type } = this.props;
-    this.setState({ value: e.target.value });
-    if (type === 'sort') this.sorting(field, e.target.value);
+    if (type === 'sort') this.sorting(field, newValue);
     if (type === 'filter') {
       const { fn } = this.props;
-      this.filtering(field, e.target.value, fn);
+      this.filtering(field, newValue, fn);
     }
   }
 
@@ -35,8 +32,7 @@ class ControlsItem extends React.Component {
   }
 
   render() {
-    const { options, name, defaultValue } = this.props;
-    const { value } = this.state;
+    const { options, name } = this.props;
     let optionsList = [];
     if (options) {
       optionsList = options.map((el) => {
@@ -50,9 +46,9 @@ class ControlsItem extends React.Component {
           optionValue = el.value;
         }
         return (
-          <option value={optionValue} key={shordid.generate()}>
+          <button className="option" type="button" onClick={this.change} value={optionValue} key={shordid.generate()}>
             {optionName}
-          </option>
+          </button>
         );
       });
     }
@@ -61,15 +57,7 @@ class ControlsItem extends React.Component {
         <p>
           {name}
         </p>
-        <select
-          value={value}
-          onChange={this.change}
-        >
-          <option value="none" defaultValue>
-            {defaultValue || 'None'}
-          </option>
-          {optionsList}
-        </select>
+        {optionsList}
       </li>
     );
   }
