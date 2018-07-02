@@ -67,32 +67,31 @@ class App extends Component {
   }
 
   sort(field, order) {
-    let sortedData;
     const { data } = this.state;
+    let sortedData = data.sort((a, b) => {
+      // Check if a or b exist
+      if (a == null && b == null) return 0;
+      if (a == null) return -1;
+      if (b == null) return 1;
+      if (!a[field] && !b[field]) return 0;
+      if (!a[field] && b[field]) return -1;
+      if (!b[field] && a[field]) return 1;
+
+      // If a and b exist
+      const a1 = parseFloat(a[field]) || a[field];
+      const b1 = parseFloat(b[field]) || b[field];
+
+      if (typeof a1 === 'number') {
+        if (a1 < b1) return -1;
+        if (a1 > b1) return 1;
+        return 0;
+      }
+      return a1.localeCompare(b1);
+    });
+
     if (order === 'dsc') {
-      sortedData = data.sort((a, b) => {
-        if (a == null && b == null) return 0;
-        if (a == null) return b[field];
-        if (b == null) return a[field];
-
-        if (!a[field] && !b[field]) return 0;
-        if (!a[field] && b[field]) return b[field];
-        if (!b[field] && a[field]) return a[field];
-        return b[field] - a[field];
-      });
-    } else {
-      sortedData = data.sort((a, b) => {
-        if (a == null && b == null) return 0;
-        if (a == null) return b[field];
-        if (b == null) return a[field];
-
-        if (!a[field] && !b[field]) return 0;
-        if (!a[field] && b[field]) return b[field];
-        if (!b[field] && a[field]) return a[field];
-        return a[field] - b[field];
-      });
+      sortedData = sortedData.reverse();
     }
-
     console.log(field, order);
 
     this.setState({
