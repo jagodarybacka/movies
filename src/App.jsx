@@ -55,7 +55,10 @@ class App extends Component {
 
   filter(field, compare, fn) {
     const { data } = this.state;
-    const filteredData = data.map(el => fn(el[field], compare) ? el : null);
+    const filteredData = data.map((el) => {
+      if (el == null) return null;
+      return fn(el[field], compare) ? el : null;
+    });
 
     this.setState({
       data: filteredData,
@@ -67,6 +70,10 @@ class App extends Component {
     const { data } = this.state;
     if (order === 'dsc') {
       sortedData = data.sort((a, b) => {
+        if (a == null && b == null) return 0;
+        if (a == null) return b[field];
+        if (b == null) return a[field];
+
         if (!a[field] && !b[field]) return 0;
         if (!a[field] && b[field]) return b[field];
         if (!b[field] && a[field]) return a[field];
@@ -75,9 +82,13 @@ class App extends Component {
       });
     } else {
       sortedData = data.sort((a, b) => {
+        if (a == null && b == null) return 0;
+        if (a == null) return b[field];
+        if (b == null) return a[field];
+
+        if (!a[field] && !b[field]) return 0;
         if (!a[field] && b[field]) return b[field];
         if (!b[field] && a[field]) return a[field];
-        console.log(a[field], b[field]);
         return a[field] - b[field];
       });
     }

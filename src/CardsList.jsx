@@ -4,13 +4,15 @@ import Card from './Card';
 import CardsListComponent from './CardsList.style';
 
 function CardsList({ fields, data }) {
-  const cards = data.map(card => (
-    <Card
-      fields={fields}
-      data={card}
-      key={shordid.generate()}
-    />
-  ));
+  const cards = data.map(card => {
+    return card ? (
+      <Card
+        fields={fields}
+        data={card}
+        key={shordid.generate()}
+      />
+  ) : null;
+  });
   return (
     <CardsListComponent>
       {cards}
