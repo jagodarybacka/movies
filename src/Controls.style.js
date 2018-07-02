@@ -10,7 +10,6 @@ const ControlsComponent = styled.form`
   box-shadow: 0 1px 6px #888888;
   border-radius: 5px;
 
-
   button {
     background-color: #9e9e9e;
     padding: 6px 8px;
@@ -49,18 +48,22 @@ const ControlsComponent = styled.form`
 const ControlsSection = styled.div`
   margin: 0 2rem;
   width: 40%;
+
   .sort p {
     display: inline;
   }
+
   p {
     margin-right: 10px;
   }
+
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: left;
   }
+  
   li {
     margin: 10px 0;
   }

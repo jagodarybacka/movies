@@ -1,13 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import shordid from 'shortid';
-
 import CardComponent from './Card.style';
 
-function Card({
-  fields,
-  data,
-}) {
+function Card({ fields, data }) {
   const info = fields.map((el) => {
     if (data[el.field]) {
       return (
@@ -33,6 +29,6 @@ function Card({
 Card.propTypes = {
   fields: PropTypes.array.isRequired,
   data: PropTypes.object.isRequired,
-}
+};
 
 export default Card;

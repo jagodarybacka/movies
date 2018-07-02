@@ -46,7 +46,13 @@ class ControlsItem extends React.Component {
           optionValue = el.value;
         }
         return (
-          <button className="option" type="button" onClick={this.change} value={optionValue} key={shordid.generate()}>
+          <button
+            className="option"
+            type="button"
+            onClick={this.change}
+            value={optionValue}
+            key={shordid.generate()}
+          >
             {optionName}
           </button>
         );

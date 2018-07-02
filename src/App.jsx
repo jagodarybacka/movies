@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import CardsList from './CardsList';
 import Controls from './Controls';
-import './App.css';
 
 const API = 'https://api.myjson.com/bins/1tll6';
 
@@ -92,7 +91,6 @@ class App extends Component {
     if (order === 'dsc') {
       sortedData = sortedData.reverse();
     }
-    console.log(field, order);
 
     this.setState({
       data: sortedData,

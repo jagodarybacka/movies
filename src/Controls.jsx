@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import shordid from 'shortid';
 import ControlsItem from './ControlsItem';
-
 import { ControlsComponent, ControlsSection } from './Controls.style';
 
 function ratingFn(fieldValue, compare) {

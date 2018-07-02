@@ -24,6 +24,6 @@ function CardsList({ fields, data }) {
 CardsList.propTypes = {
   fields: PropTypes.array.isRequired,
   data: PropTypes.array.isRequired,
-}
+};
 
 export default CardsList;
