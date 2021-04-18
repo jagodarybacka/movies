@@ -26,26 +26,10 @@ function Controls({
   const filtersItems = [
     {
       name: 'Genere',
-      field: 'genre',
+      field: 'genres',
       defaultValue: 'All',
       fn: genreFn,
       options: genres,
-    },
-    {
-      name: 'Rating',
-      field: 'rating',
-      defaultValue: 'All',
-      fn: ratingFn,
-      options: [
-        { name: '1 and more', value: 1 },
-        { name: '2 and more', value: 2 },
-        { name: '3 and more', value: 3 },
-        { name: '4 and more', value: 4 },
-        { name: '5 and more', value: 5 },
-        { name: '6 and more', value: 6 },
-        { name: '7 and more', value: 7 },
-        { name: '8 and more', value: 8 },
-        { name: '9 and more', value: 9 }],
     },
   ];
   const sortItems = [
@@ -56,16 +40,10 @@ function Controls({
       name: 'Genre', field: 'genre', defaultValue: 'None', options: orderAZ,
     },
     {
-      name: 'Release date', field: 'year', defaultValue: 'None', options: order,
-    },
-    {
       name: 'Duration', field: 'duration', defaultValue: 'None', options: order,
     },
     {
-      name: 'Rating', field: 'rating', defaultValue: 'None', options: order,
-    },
-    {
-      name: 'Votes', field: 'votes', defaultValue: 'None', options: order,
+      name: 'Year', field: 'year', defaultValue: 'None', options: order,
     },
   ];
 

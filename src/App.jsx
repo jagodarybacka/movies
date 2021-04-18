@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import CardsList from './CardsList';
 import Controls from './Controls';
 
-const API = 'https://api.myjson.com/bins/1tll6';
+import mock from './mock.json'
 
 class App extends Component {
   constructor(props) {
@@ -23,7 +22,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.get(API)
+    Promise.resolve(mock)
       .then((response) => {
         this.setState({
           fields: response.data.fields,
@@ -38,9 +37,8 @@ class App extends Component {
     const { data } = this.state;
     const genresArray = [];
     data.map((el) => {
-      if (el.genre) {
-        const elementGenres = el.genre.split(', ');
-        elementGenres.forEach((a) => {
+      if (el.genres) {
+        el.genres.forEach((a) => {
           if (genresArray.indexOf(a) === -1) {
             genresArray.push(a);
           }

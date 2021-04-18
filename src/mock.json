@@ -1,0 +1,1415 @@
+{
+  "data": {
+  "fields": [{
+    "field": "name",
+    "label": "Title"
+    }, {
+    "field": "genres",
+    "label": "Genres"
+    }, {
+    "field": "year",
+    "label": "Year"
+    }, {
+    "field": "duration",
+    "label": "Duration"
+    }],
+      "values": [
+          {
+              "name": "Beetlejuice",
+              "year": 1988,
+              "duration": 92,
+              "genres": [
+                  "Comedy",
+                  "Fantasy"
+              ]
+          },
+          {
+              "name": "The Cotton Club",
+              "year": 1984,
+              "duration": 127,
+              "genres": [
+                  "Crime",
+                  "Drama",
+                  "Music"
+              ]
+          },
+          {
+              "name": "The Shawshank Redemption",
+              "year": 1994,
+              "duration": 142,
+              "genres": [
+                  "Crime",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Crocodile Dundee",
+              "year": 1986,
+              "duration": 97,
+              "genres": [
+                  "Adventure",
+                  "Comedy"
+              ]
+          },
+          {
+              "name": "Valkyrie",
+              "year": 2008,
+              "duration": 121,
+              "genres": [
+                  "Drama",
+                  "History",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "Ratatouille",
+              "year": 2007,
+              "duration": 111,
+              "genres": [
+                  "Animation",
+                  "Comedy",
+                  "Family"
+              ]
+          },
+          {
+              "name": "City of God",
+              "year": 2002,
+              "duration": 130,
+              "genres": [
+                  "Crime",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Memento",
+              "year": 2000,
+              "duration": 113,
+              "genres": [
+                  "Mystery",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "The Intouchables",
+              "year": 2011,
+              "duration": 112,
+              "genres": [
+                  "Biography",
+                  "Comedy",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Stardust",
+              "year": 2007,
+              "duration": 127,
+              "genres": [
+                  "Adventure",
+                  "Family",
+                  "Fantasy"
+              ]
+          },
+          {
+              "name": "Apocalypto",
+              "year": 2006,
+              "duration": 139,
+              "genres": [
+                  "Action",
+                  "Adventure",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Taxi Driver",
+              "year": 1976,
+              "duration": 113,
+              "genres": [
+                  "Crime",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "No Country for Old Men",
+              "year": 2007,
+              "duration": 122,
+              "genres": [
+                  "Crime",
+                  "Drama",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "Planet 51",
+              "year": 2009,
+              "duration": 91,
+              "genres": [
+                  "Animation",
+                  "Adventure",
+                  "Comedy"
+              ]
+          },
+          {
+              "name": "Looper",
+              "year": 2012,
+              "duration": 119,
+              "genres": [
+                  "Action",
+                  "Crime",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Corpse Bride",
+              "year": 2005,
+              "duration": 77,
+              "genres": [
+                  "Animation",
+                  "Drama",
+                  "Family"
+              ]
+          },
+          {
+              "name": "The Third Man",
+              "year": 1949,
+              "duration": 93,
+              "genres": [
+                  "Film-Noir",
+                  "Mystery",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "The Beach",
+              "year": 2000,
+              "duration": 119,
+              "genres": [
+                  "Adventure",
+                  "Drama",
+                  "Romance"
+              ]
+          },
+          {
+              "name": "Scarface",
+              "year": 1983,
+              "duration": 170,
+              "genres": [
+                  "Crime",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Sid and Nancy",
+              "year": 1986,
+              "duration": 112,
+              "genres": [
+                  "Biography",
+                  "Drama",
+                  "Music"
+              ]
+          },
+          {
+              "name": "Black Swan",
+              "year": 2010,
+              "duration": 108,
+              "genres": [
+                  "Drama",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "Inception",
+              "year": 2010,
+              "duration": 148,
+              "genres": [
+                  "Action",
+                  "Adventure",
+                  "Sci-Fi"
+              ]
+          },
+          {
+              "name": "The Deer Hunter",
+              "year": 1978,
+              "duration": 183,
+              "genres": [
+                  "Drama",
+                  "War"
+              ]
+          },
+          {
+              "name": "Chasing Amy",
+              "year": 1997,
+              "duration": 113,
+              "genres": [
+                  "Comedy",
+                  "Drama",
+                  "Romance"
+              ]
+          },
+          {
+              "name": "Django Unchained",
+              "year": 2012,
+              "duration": 165,
+              "genres": [
+                  "Drama",
+                  "Western"
+              ]
+          },
+          {
+              "name": "The Silence of the Lambs",
+              "year": 1991,
+              "duration": 118,
+              "genres": [
+                  "Crime",
+                  "Drama",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "American Beauty",
+              "year": 1999,
+              "duration": 122,
+              "genres": [
+                  "Drama",
+                  "Romance"
+              ]
+          },
+          {
+              "name": "Snatch",
+              "year": 2000,
+              "duration": 102,
+              "genres": [
+                  "Comedy",
+                  "Crime"
+              ]
+          },
+          {
+              "name": "Midnight Express",
+              "year": 1978,
+              "duration": 121,
+              "genres": [
+                  "Crime",
+                  "Drama",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "Pulp Fiction",
+              "year": 1994,
+              "duration": 154,
+              "genres": [
+                  "Crime",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Lock, Stock and Two Smoking Barrels",
+              "year": 1998,
+              "duration": 107,
+              "genres": [
+                  "Comedy",
+                  "Crime"
+              ]
+          },
+          {
+              "name": "Lucky Number Slevin",
+              "year": 2006,
+              "duration": 110,
+              "genres": [
+                  "Crime",
+                  "Drama",
+                  "Mystery"
+              ]
+          },
+          {
+              "name": "Rear Window",
+              "year": 1954,
+              "duration": 112,
+              "genres": [
+                  "Mystery",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "Pan's Labyrinth",
+              "year": 2006,
+              "duration": 118,
+              "genres": [
+                  "Drama",
+                  "Fantasy",
+                  "War"
+              ]
+          },
+          {
+              "name": "Shutter Island",
+              "year": 2010,
+              "duration": 138,
+              "genres": [
+                  "Mystery",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "Reservoir Dogs",
+              "year": 1992,
+              "duration": 99,
+              "genres": [
+                  "Crime",
+                  "Drama",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "The Shining",
+              "year": 1980,
+              "duration": 146,
+              "genres": [
+                  "Drama",
+                  "Horror"
+              ]
+          },
+          {
+              "name": "Midnight in Paris",
+              "year": 2011,
+              "duration": 94,
+              "genres": [
+                  "Comedy",
+                  "Fantasy",
+                  "Romance"
+              ]
+          },
+          {
+              "name": "Les Misérables",
+              "year": 2012,
+              "duration": 158,
+              "genres": [
+                  "Drama",
+                  "Musical",
+                  "Romance"
+              ]
+          },
+          {
+              "name": "L.A. Confidential",
+              "year": 1997,
+              "duration": 138,
+              "genres": [
+                  "Crime",
+                  "Drama",
+                  "Mystery"
+              ]
+          },
+          {
+              "name": "Moneyball",
+              "year": 2011,
+              "duration": 133,
+              "genres": [
+                  "Biography",
+                  "Drama",
+                  "Sport"
+              ]
+          },
+          {
+              "name": "The Hangover",
+              "year": 2009,
+              "duration": 100,
+              "genres": [
+                  "Comedy"
+              ]
+          },
+          {
+              "name": "The Great Beauty",
+              "year": 2013,
+              "duration": 141,
+              "genres": [
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Gran Torino",
+              "year": 2008,
+              "duration": 116,
+              "genres": [
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Mary and Max",
+              "year": 2009,
+              "duration": 92,
+              "genres": [
+                  "Animation",
+                  "Comedy",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Flight",
+              "year": 2012,
+              "duration": 138,
+              "genres": [
+                  "Drama",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "One Flew Over the Cuckoo's Nest",
+              "year": 1975,
+              "duration": 133,
+              "genres": [
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Requiem for a Dream",
+              "year": 2000,
+              "duration": 102,
+              "genres": [
+                  "Drama"
+              ]
+          },
+          {
+              "name": "The Truman Show",
+              "year": 1998,
+              "duration": 103,
+              "genres": [
+                  "Comedy",
+                  "Drama",
+                  "Sci-Fi"
+              ]
+          },
+          {
+              "name": "The Artist",
+              "year": 2011,
+              "duration": 100,
+              "genres": [
+                  "Comedy",
+                  "Drama",
+                  "Romance"
+              ]
+          },
+          {
+              "name": "Forrest Gump",
+              "year": 1994,
+              "duration": 142,
+              "genres": [
+                  "Comedy",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "The Hobbit: The Desolation of Smaug",
+              "year": 2013,
+              "duration": 161,
+              "genres": [
+                  "Adventure",
+                  "Fantasy"
+              ]
+          },
+          {
+              "name": "Vicky Cristina Barcelona",
+              "year": 2008,
+              "duration": 96,
+              "genres": [
+                  "Drama",
+                  "Romance"
+              ]
+          },
+          {
+              "name": "Slumdog Millionaire",
+              "year": 2008,
+              "duration": 120,
+              "genres": [
+                  "Drama",
+                  "Romance"
+              ]
+          },
+          {
+              "name": "Lost in Translation",
+              "year": 2003,
+              "duration": 101,
+              "genres": [
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Match Point",
+              "year": 2005,
+              "duration": 119,
+              "genres": [
+                  "Drama",
+                  "Romance",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "Psycho",
+              "year": 1960,
+              "duration": 109,
+              "genres": [
+                  "Horror",
+                  "Mystery",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "North by Northwest",
+              "year": 1959,
+              "duration": 136,
+              "genres": [
+                  "Action",
+                  "Adventure",
+                  "Crime"
+              ]
+          },
+          {
+              "name": "Madagascar: Escape 2 Africa",
+              "year": 2008,
+              "duration": 89,
+              "genres": [
+                  "Animation",
+                  "Action",
+                  "Adventure"
+              ]
+          },
+          {
+              "name": "Despicable Me 2",
+              "year": 2013,
+              "duration": 98,
+              "genres": [
+                  "Animation",
+                  "Adventure",
+                  "Comedy"
+              ]
+          },
+          {
+              "name": "Downfall",
+              "year": 2004,
+              "duration": 156,
+              "genres": [
+                  "Biography",
+                  "Drama",
+                  "History"
+              ]
+          },
+          {
+              "name": "Madagascar",
+              "year": 2005,
+              "duration": 86,
+              "genres": [
+                  "Animation",
+                  "Adventure",
+                  "Comedy"
+              ]
+          },
+          {
+              "name": "Madagascar 3: Europe's Most Wanted",
+              "year": 2012,
+              "duration": 93,
+              "genres": [
+                  "Animation",
+                  "Adventure",
+                  "Comedy"
+              ]
+          },
+          {
+              "name": "God Bless America",
+              "year": 2011,
+              "duration": 105,
+              "genres": [
+                  "Comedy",
+                  "Crime"
+              ]
+          },
+          {
+              "name": "The Social Network",
+              "year": 2010,
+              "duration": 120,
+              "genres": [
+                  "Biography",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "The Pianist",
+              "year": 2002,
+              "duration": 150,
+              "genres": [
+                  "Biography",
+                  "Drama",
+                  "War"
+              ]
+          },
+          {
+              "name": "Alive",
+              "year": 1993,
+              "duration": 120,
+              "genres": [
+                  "Adventure",
+                  "Biography",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Casablanca",
+              "year": 1942,
+              "duration": 102,
+              "genres": [
+                  "Drama",
+                  "Romance",
+                  "War"
+              ]
+          },
+          {
+              "name": "American Gangster",
+              "year": 2007,
+              "duration": 157,
+              "genres": [
+                  "Biography",
+                  "Crime",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Catch Me If You Can",
+              "year": 2002,
+              "duration": 141,
+              "genres": [
+                  "Biography",
+                  "Crime",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "American History X",
+              "year": 1998,
+              "duration": 119,
+              "genres": [
+                  "Crime",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Casino",
+              "year": 1995,
+              "duration": 178,
+              "genres": [
+                  "Biography",
+                  "Crime",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Pirates of the Caribbean: At World's End",
+              "year": 2007,
+              "duration": 169,
+              "genres": [
+                  "Action",
+                  "Adventure",
+                  "Fantasy"
+              ]
+          },
+          {
+              "name": "Pirates of the Caribbean: On Stranger Tides",
+              "year": 2011,
+              "duration": 136,
+              "genres": [
+                  "Action",
+                  "Adventure",
+                  "Fantasy"
+              ]
+          },
+          {
+              "name": "Crash",
+              "year": 2004,
+              "duration": 112,
+              "genres": [
+                  "Crime",
+                  "Drama",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "Pirates of the Caribbean: The Curse of the Black Pearl",
+              "year": 2003,
+              "duration": 143,
+              "genres": [
+                  "Action",
+                  "Adventure",
+                  "Fantasy"
+              ]
+          },
+          {
+              "name": "The Lord of the Rings: The Return of the King",
+              "year": 2003,
+              "duration": 201,
+              "genres": [
+                  "Action",
+                  "Adventure",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Oldboy",
+              "year": 2003,
+              "duration": 120,
+              "genres": [
+                  "Drama",
+                  "Mystery",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "Chocolat",
+              "year": 2000,
+              "duration": 121,
+              "genres": [
+                  "Drama",
+                  "Romance"
+              ]
+          },
+          {
+              "name": "Casino Royale",
+              "year": 2006,
+              "duration": 144,
+              "genres": [
+                  "Action",
+                  "Adventure",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "WALL·E",
+              "year": 2008,
+              "duration": 98,
+              "genres": [
+                  "Animation",
+                  "Adventure",
+                  "Family"
+              ]
+          },
+          {
+              "name": "The Wolf of Wall Street",
+              "year": 2013,
+              "duration": 180,
+              "genres": [
+                  "Biography",
+                  "Comedy",
+                  "Crime"
+              ]
+          },
+          {
+              "name": "Hellboy II: The Golden Army",
+              "year": 2008,
+              "duration": 120,
+              "genres": [
+                  "Action",
+                  "Adventure",
+                  "Fantasy"
+              ]
+          },
+          {
+              "name": "Sunset Boulevard",
+              "year": 1950,
+              "duration": 110,
+              "genres": [
+                  "Drama",
+                  "Film-Noir",
+                  "Romance"
+              ]
+          },
+          {
+              "name": "I-See-You.Com",
+              "year": 2006,
+              "duration": 92,
+              "genres": [
+                  "Comedy"
+              ]
+          },
+          {
+              "name": "The Grand Budapest Hotel",
+              "year": 2014,
+              "duration": 99,
+              "genres": [
+                  "Adventure",
+                  "Comedy",
+                  "Crime"
+              ]
+          },
+          {
+              "name": "The Hitchhiker's Guide to the Galaxy",
+              "year": 2005,
+              "duration": 109,
+              "genres": [
+                  "Adventure",
+                  "Comedy",
+                  "Sci-Fi"
+              ]
+          },
+          {
+              "name": "Once Upon a Time in America",
+              "year": 1984,
+              "duration": 229,
+              "genres": [
+                  "Crime",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Oblivion",
+              "year": 2013,
+              "duration": 124,
+              "genres": [
+                  "Action",
+                  "Adventure",
+                  "Mystery"
+              ]
+          },
+          {
+              "name": "V for Vendetta",
+              "year": 2005,
+              "duration": 132,
+              "genres": [
+                  "Action",
+                  "Drama",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "Gattaca",
+              "year": 1997,
+              "duration": 106,
+              "genres": [
+                  "Drama",
+                  "Sci-Fi",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "Silver Linings Playbook",
+              "year": 2012,
+              "duration": 122,
+              "genres": [
+                  "Comedy",
+                  "Drama",
+                  "Romance"
+              ]
+          },
+          {
+              "name": "Alice in Wonderland",
+              "year": 2010,
+              "duration": 108,
+              "genres": [
+                  "Adventure",
+                  "Family",
+                  "Fantasy"
+              ]
+          },
+          {
+              "name": "Gandhi",
+              "year": 1982,
+              "duration": 191,
+              "genres": [
+                  "Biography",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Pacific Rim",
+              "year": 2013,
+              "duration": 131,
+              "genres": [
+                  "Action",
+                  "Adventure",
+                  "Sci-Fi"
+              ]
+          },
+          {
+              "name": "Kiss Kiss Bang Bang",
+              "year": 2005,
+              "duration": 103,
+              "genres": [
+                  "Comedy",
+                  "Crime",
+                  "Mystery"
+              ]
+          },
+          {
+              "name": "The Quiet American",
+              "year": 2002,
+              "duration": 101,
+              "genres": [
+                  "Drama",
+                  "Mystery",
+                  "Romance"
+              ]
+          },
+          {
+              "name": "Cloud Atlas",
+              "year": 2012,
+              "duration": 172,
+              "genres": [
+                  "Drama",
+                  "Sci-Fi"
+              ]
+          },
+          {
+              "name": "The Impossible",
+              "year": 2012,
+              "duration": 114,
+              "genres": [
+                  "Drama",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "All Quiet on the Western Front",
+              "year": 1930,
+              "duration": 136,
+              "genres": [
+                  "Drama",
+                  "War"
+              ]
+          },
+          {
+              "name": "The English Patient",
+              "year": 1996,
+              "duration": 162,
+              "genres": [
+                  "Drama",
+                  "Romance",
+                  "War"
+              ]
+          },
+          {
+              "name": "Dallas Buyers Club",
+              "year": 2013,
+              "duration": 117,
+              "genres": [
+                  "Biography",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Frida",
+              "year": 2002,
+              "duration": 123,
+              "genres": [
+                  "Biography",
+                  "Drama",
+                  "Romance"
+              ]
+          },
+          {
+              "name": "Before Sunrise",
+              "year": 1995,
+              "duration": 105,
+              "genres": [
+                  "Drama",
+                  "Romance"
+              ]
+          },
+          {
+              "name": "The Rum Diary",
+              "year": 2011,
+              "duration": 120,
+              "genres": [
+                  "Comedy",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "The Last Samurai",
+              "year": 2003,
+              "duration": 154,
+              "genres": [
+                  "Action",
+                  "Drama",
+                  "History"
+              ]
+          },
+          {
+              "name": "Chinatown",
+              "year": 1974,
+              "duration": 130,
+              "genres": [
+                  "Drama",
+                  "Mystery",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "Calvary",
+              "year": 2014,
+              "duration": 102,
+              "genres": [
+                  "Comedy",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Before Sunset",
+              "year": 2004,
+              "duration": 80,
+              "genres": [
+                  "Drama",
+                  "Romance"
+              ]
+          },
+          {
+              "name": "Spirited Away",
+              "year": 2001,
+              "duration": 125,
+              "genres": [
+                  "Animation",
+                  "Adventure",
+                  "Family"
+              ]
+          },
+          {
+              "name": "Indochine",
+              "year": 1992,
+              "duration": 159,
+              "genres": [
+                  "Drama",
+                  "Romance"
+              ]
+          },
+          {
+              "name": "Birdman or (The Unexpected Virtue of Ignorance)",
+              "year": 2014,
+              "duration": 119,
+              "genres": [
+                  "Comedy",
+                  "Drama",
+                  "Romance"
+              ]
+          },
+          {
+              "name": "Boyhood",
+              "year": 2014,
+              "duration": 165,
+              "genres": [
+                  "Drama"
+              ]
+          },
+          {
+              "name": "12 Angry Men",
+              "year": 1957,
+              "duration": 96,
+              "genres": [
+                  "Crime",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "The Imitation Game",
+              "year": 2014,
+              "duration": 114,
+              "genres": [
+                  "Biography",
+                  "Drama",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "Interstellar",
+              "year": 2014,
+              "duration": 169,
+              "genres": [
+                  "Adventure",
+                  "Drama",
+                  "Sci-Fi"
+              ]
+          },
+          {
+              "name": "Big Nothing",
+              "year": 2006,
+              "duration": 86,
+              "genres": [
+                  "Comedy",
+                  "Crime",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "Das Boot",
+              "year": 1981,
+              "duration": 149,
+              "genres": [
+                  "Adventure",
+                  "Drama",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "Shrek 2",
+              "year": 2004,
+              "duration": 93,
+              "genres": [
+                  "Animation",
+                  "Adventure",
+                  "Comedy"
+              ]
+          },
+          {
+              "name": "Sin City",
+              "year": 2005,
+              "duration": 124,
+              "genres": [
+                  "Crime",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "Nebraska",
+              "year": 2013,
+              "duration": 115,
+              "genres": [
+                  "Adventure",
+                  "Comedy",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Shrek",
+              "year": 2001,
+              "duration": 90,
+              "genres": [
+                  "Animation",
+                  "Adventure",
+                  "Comedy"
+              ]
+          },
+          {
+              "name": "Mr. & Mrs. Smith",
+              "year": 2005,
+              "duration": 120,
+              "genres": [
+                  "Action",
+                  "Comedy",
+                  "Crime"
+              ]
+          },
+          {
+              "name": "Original Sin",
+              "year": 2001,
+              "duration": 116,
+              "genres": [
+                  "Drama",
+                  "Mystery",
+                  "Romance"
+              ]
+          },
+          {
+              "name": "Shrek Forever After",
+              "year": 2010,
+              "duration": 93,
+              "genres": [
+                  "Animation",
+                  "Adventure",
+                  "Comedy"
+              ]
+          },
+          {
+              "name": "Before Midnight",
+              "year": 2013,
+              "duration": 109,
+              "genres": [
+                  "Drama",
+                  "Romance"
+              ]
+          },
+          {
+              "name": "Despicable Me",
+              "year": 2010,
+              "duration": 95,
+              "genres": [
+                  "Animation",
+                  "Adventure",
+                  "Comedy"
+              ]
+          },
+          {
+              "name": "Troy",
+              "year": 2004,
+              "duration": 163,
+              "genres": [
+                  "Adventure"
+              ]
+          },
+          {
+              "name": "The Hobbit: An Unexpected Journey",
+              "year": 2012,
+              "duration": 169,
+              "genres": [
+                  "Adventure",
+                  "Fantasy"
+              ]
+          },
+          {
+              "name": "The Great Gatsby",
+              "year": 2013,
+              "duration": 143,
+              "genres": [
+                  "Drama",
+                  "Romance"
+              ]
+          },
+          {
+              "name": "Ice Age",
+              "year": 2002,
+              "duration": 81,
+              "genres": [
+                  "Animation",
+                  "Adventure",
+                  "Comedy"
+              ]
+          },
+          {
+              "name": "The Lord of the Rings: The Fellowship of the Ring",
+              "year": 2001,
+              "duration": 178,
+              "genres": [
+                  "Action",
+                  "Adventure",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "The Lord of the Rings: The Two Towers",
+              "year": 2002,
+              "duration": 179,
+              "genres": [
+                  "Action",
+                  "Adventure",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Ex Machina",
+              "year": 2015,
+              "duration": 108,
+              "genres": [
+                  "Drama",
+                  "Mystery",
+                  "Sci-Fi"
+              ]
+          },
+          {
+              "name": "The Theory of Everything",
+              "year": 2014,
+              "duration": 123,
+              "genres": [
+                  "Biography",
+                  "Drama",
+                  "Romance"
+              ]
+          },
+          {
+              "name": "Shogun",
+              "year": 1980,
+              "duration": 60,
+              "genres": [
+                  "Adventure",
+                  "Drama",
+                  "History"
+              ]
+          },
+          {
+              "name": "Spotlight",
+              "year": 2015,
+              "duration": 128,
+              "genres": [
+                  "Biography",
+                  "Crime",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "Vertigo",
+              "year": 1958,
+              "duration": 128,
+              "genres": [
+                  "Mystery",
+                  "Romance",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "Whiplash",
+              "year": 2014,
+              "duration": 107,
+              "genres": [
+                  "Drama",
+                  "Music"
+              ]
+          },
+          {
+              "name": "The Lives of Others",
+              "year": 2006,
+              "duration": 137,
+              "genres": [
+                  "Drama",
+                  "Thriller"
+              ]
+          },
+          {
+              "name": "Hotel Rwanda",
+              "year": 2004,
+              "duration": 121,
+              "genres": [
+                  "Drama",
+                  "History",
+                  "War"
+              ]
+          },
+          {
+              "name": "The Martian",
+              "year": 2015,
+              "duration": 144,
+              "genres": [
+                  "Adventure",
+                  "Drama",
+                  "Sci-Fi"
+              ]
+          },
+          {
+              "name": "To Kill a Mockingbird",
+              "year": 1962,
+              "duration": 129,
+              "genres": [
+                  "Crime",
+                  "Drama"
+              ]
+          },
+          {
+              "name": "The Hateful Eight",
+              "year": 2015,
+              "duration": 187,
+              "genres": [
+                  "Crime",
+                  "Drama",
+                  "Mystery"
+              ]
+          },
+          {
+              "name": "A Separation",
+              "year": 2011,
+              "duration": 123,
+              "genres": [
+                  "Drama",
+                  "Mystery"
+              ]
+          },
+          {
+              "name": "The Big Short",
+              "year": 2015,
+              "duration": 130,
+              "genres": [
+                  "Biography",
+                  "Comedy",
+                  "Drama"
+              ]
+          }
+      ]
+  }
+}
