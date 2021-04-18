@@ -4,11 +4,6 @@ import shordid from 'shortid';
 import ControlsItem from './ControlsItem';
 import { ControlsComponent, ControlsSection } from './Controls.style';
 
-function ratingFn(fieldValue, compare) {
-  if (fieldValue && fieldValue > compare) return true;
-  return false;
-}
-
 function genreFn(fieldValue, compare) {
   if (fieldValue && fieldValue.indexOf(compare) >= 0) return true;
   return false;
